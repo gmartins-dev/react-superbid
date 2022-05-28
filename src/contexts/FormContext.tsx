@@ -14,7 +14,7 @@ type State = {
   certificateType: null | number;
   personType: 0 | 1;
   email: string;
-  phone: number;
+  phone: null | number;
 };
 
 type Action = {
@@ -37,7 +37,7 @@ const initialData: State = {
   certificateType: null,
   personType: 0,
   email: '',
-  phone: 0,
+  phone: null,
 };
 
 //Context

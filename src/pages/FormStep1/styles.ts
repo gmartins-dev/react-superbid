@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   p {
-    font-size: 13px;
+    font-size: 16px;
     color: #66696f;
   }
   h1 {

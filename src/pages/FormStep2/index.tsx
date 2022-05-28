@@ -27,7 +27,7 @@ export const FormStep2 = () => {
   }, []);
 
   const handleNextStep = () => {
-    if (state.personType != 0) {
+    if (state.personType != undefined) {
       navigate('/step3');
     } else {
       alert('Preencha todos os dados.');
