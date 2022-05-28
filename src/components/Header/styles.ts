@@ -10,7 +10,12 @@ export const Container = styled.div`
     font-size: 28px;
   }
   p {
-    font-size: 14px;
+    font-size: 16px;
     color: #66696f;
+    margin-bottom: -5px;
+  }
+  img {
+    display: block;
+    margin-top: -30px;
   }
 `;

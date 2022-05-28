@@ -16,7 +16,7 @@ export const FormStep4 = () => {
         />
         <br />
         <img
-          src="/public/imgs/sb_logo.png"
+          src="/public/imgs/logo_superbid.png"
           width="200px"
           alt="logomarca da empresa superbid"
         />
