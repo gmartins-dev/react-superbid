@@ -1,17 +1,10 @@
 // Context - Reducer - Provider - Hook
 import {
   createContext,
+  ReactNode,
   useContext,
   useReducer,
 } from 'react';
-
-const initialData: State = {
-  currentStep: 0,
-  name: '',
-  personType: 0,
-  email: '',
-  phone: 0,
-};
 
 //@Types:
 
@@ -23,9 +16,33 @@ type State = {
   phone: number;
 };
 
+type Action = {
+  type: FormActions;
+  payload: any;
+};
+
+type ContextType = {
+  state: State;
+  dispatch: (action: Action) => void;
+};
+
+type FormProviderProps = {
+  children: ReactNode;
+};
+
+const initialData: State = {
+  currentStep: 0,
+  name: '',
+  personType: 0,
+  email: '',
+  phone: 0,
+};
+
 //Context
 
-const FormContext = createContext(undefined);
+const FormContext = createContext<ContextType | undefined>(
+  undefined,
+);
 
 //Reducer
 
@@ -37,7 +54,7 @@ enum FormActions {
   setPhone,
 }
 
-const FormReducer = (state, action) => {
+const FormReducer = (state: State, action: Action) => {
   switch (action.type) {
     case FormActions.setCurrentStep:
       return { ...state, currentStep: action.payload };
@@ -56,7 +73,7 @@ const FormReducer = (state, action) => {
 
 //Provider
 
-const FormProvider = ({ children }) => {
+const FormProvider = ({ children }: FormProviderProps) => {
   const [state, dispatch] = useReducer(
     FormReducer,
     initialData,
