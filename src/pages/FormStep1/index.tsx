@@ -1,8 +1,49 @@
+import { useNavigate } from 'react-router-dom';
 import * as C from './styles';
+import {
+  useForm,
+  FormActions,
+} from '../../contexts/FormContext';
 import { Theme } from '../../components/Theme';
+import { ChangeEvent, useEffect } from 'react';
 
 export const FormStep1 = () => {
-  const handleNextStep = () => {};
+  const navigate = useNavigate();
+
+  const { state, dispatch } = useForm();
+
+  useEffect(() => {
+    dispatch({
+      type: FormActions.setCurrentStep,
+      payload: 1,
+    });
+  }, []);
+
+  const handleNextStep = () => {
+    if (state.name != '' && state.certificateType != null) {
+      navigate('/step2');
+    } else {
+      alert('Preencha todos os dados.');
+    }
+  };
+
+  const handleNameChange = (
+    e: ChangeEvent<HTMLInputElement>,
+  ) => {
+    dispatch({
+      type: FormActions.setName,
+      payload: e.target.value,
+    });
+  };
+
+  const handleCertificateTypeChange = (
+    e: ChangeEvent<HTMLInputElement>,
+  ) => {
+    dispatch({
+      type: FormActions.setCertificateType,
+      payload: e.target.value,
+    });
+  };
 
   return (
     <Theme>
@@ -16,16 +57,21 @@ export const FormStep1 = () => {
 
         <label>
           Seu nome completo ou da empresa
-          <input type="text" autoFocus />
+          <input
+            type="text"
+            autoFocus
+            value={state.name}
+            onChange={handleNameChange}
+          />
         </label>
         <hr />
-        <p>
-          Por favor preencha o seu CPF ou CNJP da sua
-          empresa abaixo:
-        </p>
         <label>
-          Seu CPF ou CNJP da empresa
-          <input type="number" autoFocus />
+          Seu <b>CPF</b> ou <b>CNJP</b> da empresa
+          <input
+            type="number"
+            value={state.certificateType}
+            onChange={handleCertificateTypeChange}
+          />
         </label>
 
         <button onClick={handleNextStep}>Próximo</button>

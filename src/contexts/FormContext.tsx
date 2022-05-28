@@ -11,7 +11,7 @@ import {
 type State = {
   currentStep: number;
   name: string;
-  certificateType: number;
+  certificateType: null | number;
   personType: 0 | 1;
   email: string;
   phone: number;
@@ -34,7 +34,7 @@ type FormProviderProps = {
 const initialData: State = {
   currentStep: 0,
   name: '',
-  certificateType: 0,
+  certificateType: null,
   personType: 0,
   email: '',
   phone: 0,

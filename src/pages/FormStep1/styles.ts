@@ -34,11 +34,12 @@ export const Container = styled.div`
   }
   button {
     background-color: #ec660b;
-    color: #131415;
+    color: #ffffff;
     font-size: 14px;
     font-weight: bold;
     padding: 20px 40px;
     margin-top: 30px;
+    margin-left: 80%;
     border: 0;
     border-radius: 30px;
     cursor: pointer;
