@@ -11,6 +11,7 @@ import {
 type State = {
   currentStep: number;
   name: string;
+  certificateType: number;
   personType: 0 | 1;
   email: string;
   phone: number;
@@ -33,6 +34,7 @@ type FormProviderProps = {
 const initialData: State = {
   currentStep: 0,
   name: '',
+  certificateType: 0,
   personType: 0,
   email: '',
   phone: 0,
@@ -49,6 +51,7 @@ const FormContext = createContext<ContextType | undefined>(
 export enum FormActions {
   setCurrentStep,
   setName,
+  setCertificateType,
   setPersonType,
   setEmail,
   setPhone,
@@ -60,6 +63,8 @@ const FormReducer = (state: State, action: Action) => {
       return { ...state, currentStep: action.payload };
     case FormActions.setName:
       return { ...state, name: action.payload };
+    case FormActions.setCertificateType:
+      return { ...state, certificateType: action.payload };
     case FormActions.setPersonType:
       return { ...state, personType: action.payload };
     case FormActions.setEmail:

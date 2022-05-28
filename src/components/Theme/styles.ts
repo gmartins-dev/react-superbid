@@ -4,6 +4,7 @@ export const Container = styled.div`
   background-color: #f8f8f8;
   color: #131415;
   min-height: 100vh;
+  font-family: 'Nunito', sans-serif;
 `;
 
 export const Area = styled.div`
