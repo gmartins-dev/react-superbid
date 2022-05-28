@@ -5,12 +5,22 @@ import {
   useReducer,
 } from 'react';
 
-const initialData = {
+const initialData: State = {
   currentStep: 0,
   name: '',
   personType: 0,
   email: '',
-  phone: '',
+  phone: 0,
+};
+
+//@Types:
+
+type State = {
+  currentStep: number;
+  name: string;
+  personType: 0 | 1;
+  email: string;
+  phone: number;
 };
 
 //Context
