@@ -5,6 +5,14 @@ import {
   useReducer,
 } from 'react';
 
+const initialData = {
+  currentStep: 0,
+  name: '',
+  personType: 0,
+  email: '',
+  phone: '',
+};
+
 //Context
 
 const FormContext = createContext(undefined);
@@ -34,4 +42,20 @@ const FormReducer = (state, action) => {
     default:
       return state;
   }
+};
+
+//Provider
+
+const FormProvider = ({ children }) => {
+  const [state, dispatch] = useReducer(
+    FormReducer,
+    initialData,
+  );
+  const value = { state, dispatch };
+
+  return (
+    <FormContext.Provider value={value}>
+      {children}
+    </FormContext.Provider>
+  );
 };
