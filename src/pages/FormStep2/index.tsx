@@ -1,4 +1,4 @@
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { ChangeEvent, useEffect } from 'react';
 import * as C from './styles';
 import {
@@ -14,10 +14,16 @@ export const FormStep2 = () => {
   const { state, dispatch } = useForm();
 
   useEffect(() => {
-    dispatch({
-      type: FormActions.setCurrentStep,
-      payload: 2,
-    });
+    if (
+      state.name === '' &&
+      state.certificateType === null
+    ) {
+      navigate('/');
+    } else
+      dispatch({
+        type: FormActions.setCurrentStep,
+        payload: 2,
+      });
   }, []);
 
   const handleNextStep = () => {
@@ -40,8 +46,8 @@ export const FormStep2 = () => {
       <C.Container>
         <p>Passo 2/3</p>
         <h1>
-          Deseja se cadastrar como pessoa física ou
-          jurídica?
+          <i>{state.name}</i>, deseja se cadastrar como
+          Pessoa Física ou Jurídica?
         </h1>
         <hr />
         <SelectOption
@@ -53,12 +59,15 @@ export const FormStep2 = () => {
         />
         <SelectOption
           title="Sou Pessoa Jurídica (PJ)"
-          description="Se você for PF escolha essa opção."
+          description="Caso seja PF escolha essa opção."
           icon="🏢"
           selected={state.personType === 1}
           onClick={() => setPersonType(1)}
         />
 
+        <Link to="/" className="backButton">
+          Voltar
+        </Link>
         <button onClick={handleNextStep}>Próximo</button>
       </C.Container>
     </Theme>

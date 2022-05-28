@@ -38,7 +38,7 @@ export const Container = styled.div`
     font-size: 14px;
     font-weight: bold;
     padding: 20px 40px;
-    margin-top: 30px;
+    margin-top: 20px;
     margin-left: 80%;
     border: 0;
     border-radius: 30px;

@@ -38,10 +38,21 @@ export const Container = styled.div`
     font-size: 14px;
     font-weight: bold;
     padding: 20px 40px;
-    margin-top: 30px;
+    margin-top: -10px;
     margin-left: 80%;
     border: 0;
     border-radius: 30px;
     cursor: pointer;
+  }
+  .backButton {
+    font-size: 16px;
+    text-decoration: none;
+    padding: 20px 40px;
+    margin-left: 60%;
+    margin-top: 30px;
+    position: relative;
+    left: 20px;
+    top: 30px;
+    color: #0050a0;
   }
 `;
