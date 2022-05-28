@@ -1,4 +1,4 @@
-// Context - Reducer - Provider - Hooks
+// Context - Reducer - Provider - Hook
 import {
   createContext,
   useContext,
@@ -58,4 +58,16 @@ const FormProvider = ({ children }) => {
       {children}
     </FormContext.Provider>
   );
+};
+
+//Context Hook
+
+const useForm = () => {
+  const context = useContext(FormContext);
+  if (context === undefined) {
+    throw new Error(
+      'useForm so pode ser usado dentro do FormProvider',
+    );
+  }
+  return context;
 };
