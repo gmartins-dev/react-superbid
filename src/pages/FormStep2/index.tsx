@@ -21,11 +21,18 @@ export const FormStep2 = () => {
   }, []);
 
   const handleNextStep = () => {
-    if (state.name != '' && state.certificateType != null) {
-      navigate('/step2');
+    if (state.personType != 0) {
+      navigate('/step3');
     } else {
       alert('Preencha todos os dados.');
     }
+  };
+
+  const setPersonType = (personType: number) => {
+    dispatch({
+      type: FormActions.setPersonType,
+      payload: personType,
+    });
   };
 
   return (
@@ -41,11 +48,15 @@ export const FormStep2 = () => {
           title="Sou Pessoa Física (PF)"
           description="Se você for PF escolha essa opção."
           icon="👤"
+          selected={state.personType === 0}
+          onClick={() => setPersonType(0)}
         />
         <SelectOption
           title="Sou Pessoa Jurídica (PJ)"
           description="Se você for PF escolha essa opção."
           icon="🏢"
+          selected={state.personType === 1}
+          onClick={() => setPersonType(1)}
         />
 
         <button onClick={handleNextStep}>Próximo</button>
