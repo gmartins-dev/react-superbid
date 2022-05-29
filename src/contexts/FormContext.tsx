@@ -11,10 +11,11 @@ import {
 type State = {
   currentStep: number;
   name: string;
-  certificateType: null | number;
+  password: undefined | number;
+  certificateType: undefined | number;
   personType: 0 | 1;
   email: string;
-  phone: null | number;
+  phone: undefined | number;
 };
 
 type Action = {
@@ -34,10 +35,11 @@ type FormProviderProps = {
 const initialData: State = {
   currentStep: 0,
   name: '',
-  certificateType: null,
+  password: undefined,
+  certificateType: undefined,
   personType: 0,
   email: '',
-  phone: null,
+  phone: undefined,
 };
 
 //Context
@@ -51,6 +53,7 @@ const FormContext = createContext<ContextType | undefined>(
 export enum FormActions {
   setCurrentStep,
   setName,
+  setPassword,
   setCertificateType,
   setPersonType,
   setEmail,
@@ -62,6 +65,8 @@ const FormReducer = (state: State, action: Action) => {
     case FormActions.setCurrentStep:
       return { ...state, currentStep: action.payload };
     case FormActions.setName:
+      return { ...state, name: action.payload };
+    case FormActions.setPassword:
       return { ...state, name: action.payload };
     case FormActions.setCertificateType:
       return { ...state, certificateType: action.payload };

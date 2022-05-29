@@ -15,7 +15,7 @@ export const FormStep3 = () => {
   useEffect(() => {
     if (
       state.name === '' &&
-      state.certificateType === null
+      state.certificateType === undefined
     ) {
       navigate('/');
     } else
@@ -26,7 +26,11 @@ export const FormStep3 = () => {
   }, []);
 
   const handleNextStep = () => {
-    if (state.email != '' && state.phone != null) {
+    if (
+      state.email != '' &&
+      state.phone != undefined &&
+      state.password != undefined
+    ) {
       navigate('/step4');
     } else {
       alert('Preencha todos os dados.');
@@ -51,6 +55,15 @@ export const FormStep3 = () => {
     });
   };
 
+  const handlePasswordChange = (
+    e: ChangeEvent<HTMLInputElement>,
+  ) => {
+    dispatch({
+      type: FormActions.setPassword,
+      payload: e.target.value,
+    });
+  };
+
   return (
     <Theme>
       <C.Container>
@@ -67,7 +80,6 @@ export const FormStep3 = () => {
             onChange={handleEmailChange}
           />
         </label>
-        <hr />
         <label>
           Preencha seu <b>telefone</b> para contato.
           <input
@@ -76,10 +88,24 @@ export const FormStep3 = () => {
             onChange={handlePhoneChange}
           />
         </label>
+        <hr />
+        <h3>Password</h3>
+        <p>Por favor preencha sua senha de acesso.</p>
+
+        <label>
+          Preencha sua <b>senha</b> de acesso.
+          <input
+            type="password"
+            autoFocus
+            value={state.password}
+            onChange={handlePasswordChange}
+          />
+        </label>
+
         <Link to="/step2" className="backButton">
           Voltar
         </Link>
-        <button onClick={handleNextStep}>Concluir</button>
+        <button onClick={handleNextStep}>Finalizar</button>
       </C.Container>
     </Theme>
   );

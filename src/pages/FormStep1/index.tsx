@@ -20,7 +20,10 @@ export const FormStep1 = () => {
   }, []);
 
   const handleNextStep = () => {
-    if (state.name != '' && state.certificateType != null) {
+    if (
+      state.name != '' &&
+      state.certificateType != undefined
+    ) {
       navigate('/step2');
     } else {
       alert('Preencha todos os dados.');

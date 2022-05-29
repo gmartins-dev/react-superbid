@@ -16,7 +16,7 @@ export const FormStep2 = () => {
   useEffect(() => {
     if (
       state.name === '' &&
-      state.certificateType === null
+      state.certificateType === undefined
     ) {
       navigate('/');
     } else
