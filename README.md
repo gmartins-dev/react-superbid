@@ -80,7 +80,7 @@ Esse projeto foi utilizou das seguintes libs:
 
 
 <p align="center">
-    <img alt="FormStep1" src="/step1.png" />
+    <img alt="FormStep1" src="/public/imgs/step1.png" />
 </p>
 <p align="center">
     <img alt="FormStep2" src="/public/imgs/step2.png" />
