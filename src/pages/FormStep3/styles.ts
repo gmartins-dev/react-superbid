@@ -57,4 +57,29 @@ export const Container = styled.div`
     top: 30px;
     color: #0050a0;
   }
+  @media (max-width: 480px) {
+    button {
+      background-color: #ec660b;
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: bold;
+      border: 0;
+      border-radius: 30px;
+      margin: auto;
+      margin-left: 20px;
+      margin-top: 10px;
+      cursor: pointer;
+    }
+    .backButton {
+      font-size: 16px;
+      text-decoration: none;
+      padding: 20px 40px;
+      margin-left: 0;
+      margin-top: -20px;
+      position: relative;
+      left: 20px;
+      top: 0px;
+      color: #0050a0;
+    }
+  }
 `;

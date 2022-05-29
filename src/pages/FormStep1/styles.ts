@@ -44,4 +44,18 @@ export const Container = styled.div`
     border-radius: 30px;
     cursor: pointer;
   }
+  @media (max-width: 480px) {
+    button {
+      background-color: #ec660b;
+      color: #ffffff;
+      font-size: 14px;
+      font-weight: bold;
+      border: 0;
+      border-radius: 30px;
+      margin: auto;
+      margin-left: 20px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+  }
 `;
