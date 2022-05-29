@@ -1,7 +1,7 @@
 
 
 <h1 align="center">
-    Desafio React - 1STi
+    React - Superbid
 </h1>
 
 
@@ -23,12 +23,27 @@ Obs: ao final do cadastro é gerado um JSON com a finalidade de ser enviado para
 
 Esse projeto foi desenvolvido principalmente com as seguintes tecnologias:
 
-- <img align="center" alt="React" height="30" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"> React
--  <img align="center" alt="Ts" height="30" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg">  TypeScript
-- <img align="center" alt="Ts" height="30" width="30" src="https://cdn-media-1.freecodecamp.org/images/1*p1TndLk3UsGPBsM7qHPZIw.png">  Styled-components
+- <img align="center" alt="React" height="30" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"> **React**
+-  <img align="center" alt="Ts" height="30" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg">  **TypeScript**
+- <img align="center" alt="Ts" height="30" width="30" src="https://cdn-media-1.freecodecamp.org/images/1*p1TndLk3UsGPBsM7qHPZIw.png">  **Styled-components**
 
+## 🛠 Possiveis melhorias:
 
+ 1. Conectar o formulário de cadastro ao backend
+ 
+ 2. Adicionar mais recursos extras de responsavidade para versão mobile
 
+ 3. Adicionar verificações/validações aos inputs
+ Ex:  verificar se cpf/cpnj/email etc… é valido   ou não
+
+ 4. Adicionar mais campos/inputs ao formulário de cadastro caso necessario
+
+ 5. Adicionar widget  fixo no canto inferior da tela de  (“Fale conosco em caso de dúvidas” ) que abra um chatbot por exemplo
+
+ 6. Apos concluir o cadastro redirecionar para a pagina principal do  marketplace
+ 
+ 8. Caso você tenha mais alguma sugesão de melhoria sera muito bem vinda, entre em contato comigo ou faça um pull-request nesse repositório.
+ 
 
 ## 📕 Bibliotecas
 
@@ -43,6 +58,25 @@ Esse projeto foi utilizou das seguintes libs:
 
 
 ## 🔖 Layout
+
+**Fonte** principal utilizada: **Nunito** sans serif
+[](https://fonts.google.com/specimen/Nunito)[https://fonts.google.com/specimen/Nunito](https://fonts.google.com/specimen/Nunito)
+
+ - **Cores:**
+
+Cinza background → #F8F8F8
+
+Preto fonte  primário  →  #131415
+
+Cinza fonte →  #66696F
+
+Laranja primário → #EC660B
+
+Azul primário → #0050A0
+
+Azul claro → #D6EAF5
+<hr/>
+
 
 <p align="center">
     <img alt="FormStep1" src="/public/step1.png" />
