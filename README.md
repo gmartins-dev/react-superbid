@@ -104,10 +104,10 @@ $ cd react-superbid
 Para iniciá-lo, siga os passos abaixo:
 ```bash
 # Instalar as dependências
-$ yarn
+$ yarn ou npm install
 
 # Iniciar o projeto
-$ yarn start
+$ yarn start ou npm run dev
 ```
 O app estará disponível no seu browser pelo endereço http://localhost:3000.
 
