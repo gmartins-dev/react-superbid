@@ -80,16 +80,16 @@ Esse projeto foi utilizou das seguintes libs:
 
 
 <p align="center">
-    <img alt="FormStep1" src="/public/step1.png" />
+    <img alt="FormStep1" src="/step1.png" />
 </p>
 <p align="center">
-    <img alt="FormStep2" src="/public/step2.png" />
+    <img alt="FormStep2" src="/step2.png" />
 </p>
 <p align="center">
-    <img alt="FormStep3" src="/public/step3.png" />
+    <img alt="FormStep3" src="/step3.png" />
 </p>
 <p align="center">
-    <img alt="FormStep4" src="/public/step4.png" />
+    <img alt="FormStep4" src="/step4.png" />
 </p>
 
 ## 🚀 Como executar
