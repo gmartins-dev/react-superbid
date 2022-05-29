@@ -4,7 +4,7 @@ export const Header = () => {
   return (
     <C.Container>
       <img
-        src="/public/imgs/logo_sbmarketplace.png"
+        src="imgs/logo_sbmarketplace.png"
         width="200px"
         alt="imagem ilustrando um aperto de mãos"
       />

@@ -17,7 +17,7 @@ export const FormStep3 = () => {
       state.name === '' &&
       state.certificateType === undefined
     ) {
-      navigate('/');
+      navigate('/2');
     } else
       dispatch({
         type: FormActions.setCurrentStep,
@@ -29,7 +29,7 @@ export const FormStep3 = () => {
     if (
       state.email != '' &&
       state.phone != undefined &&
-      state.password != undefined
+      state.password != ''
     ) {
       navigate('/step4');
     } else {
@@ -96,7 +96,6 @@ export const FormStep3 = () => {
           Preencha sua <b>senha</b> de acesso.
           <input
             type="password"
-            autoFocus
             value={state.password}
             onChange={handlePasswordChange}
           />

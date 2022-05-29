@@ -10,13 +10,13 @@ export const FormStep4 = () => {
     <Theme>
       <C.Container>
         <img
-          src="/public/imgs/maos.png"
+          src="imgs/maos.png"
           width="200px"
           alt="imagem ilustrando um aperto de mãos"
         />
         <br />
         <img
-          src="/public/imgs/logo_superbid.png"
+          src="imgs/logo_superbid.png"
           width="200px"
           alt="logomarca da empresa superbid"
         />
