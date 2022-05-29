@@ -60,22 +60,22 @@ Esse projeto foi utilizou das seguintes libs:
 
 ## 🔖 Layout
 
-**Fonte** principal utilizada: **Nunito** sans serif
-[](https://fonts.google.com/specimen/Nunito)[https://fonts.google.com/specimen/Nunito](https://fonts.google.com/specimen/Nunito)
+- **Fonte**: **[Nunito](https://fonts.google.com/specimen/Nunito)** 
 
  - **Cores:**
 
-Cinza background → #F8F8F8
+		
+		Cinza background → #F8F8F8
 
-Preto fonte  primário  →  #131415
+		Preto fonte  primário  →  #131415
 
-Cinza fonte →  #66696F
+		Cinza fonte →  #66696F
 
-Laranja primário → #EC660B
+		Laranja primário → #EC660B
 
-Azul primário → #0050A0
+		Azul primário → #0050A0
 
-Azul claro → #D6EAF5
+		Azul claro → #D6EAF5
 <hr/>
 
 
