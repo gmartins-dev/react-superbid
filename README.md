@@ -6,7 +6,7 @@
 
 
 
-## 💻 Projeto
+## 🗃 Projeto
 
 
 
@@ -19,13 +19,6 @@ https://react-superbid.vercel.app/
 
 Obs: ao final do cadastro é gerado um JSON com a finalidade de ser enviado para um possivel backend, que no momento não está conectado, porém é possivel visualizar o JSON criado ao finalizar o cadastro inspecionando a pagina e visualizando o console log.
 
-## 🧪 Tecnologias
-
-Esse projeto foi desenvolvido principalmente com as seguintes tecnologias:
-
-- <img align="center" alt="React" height="30" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"> **React**
--  <img align="center" alt="Ts" height="30" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg">  **TypeScript**
-- <img align="center" alt="Ts" height="30" width="30" src="https://cdn-media-1.freecodecamp.org/images/1*p1TndLk3UsGPBsM7qHPZIw.png">  **Styled-components**
 
 ## 🛠 Possiveis melhorias:
 
@@ -44,6 +37,14 @@ Esse projeto foi desenvolvido principalmente com as seguintes tecnologias:
  
  8. Caso você tenha mais alguma sugesão de melhoria sera muito bem vinda, entre em contato comigo ou faça um pull-request nesse repositório.
  
+## 🧪 Tecnologias
+
+Esse projeto foi desenvolvido principalmente com as seguintes tecnologias:
+
+- <img align="center" alt="React" height="30" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original.svg"> **React**
+
+-  <img align="center" alt="Ts" height="30" width="30" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-plain.svg">  **TypeScript**
+- <img align="center" alt="Ts" height="30" width="30" src="https://cdn-media-1.freecodecamp.org/images/1*p1TndLk3UsGPBsM7qHPZIw.png">  **Styled-components**
 
 ## 📕 Bibliotecas
 
