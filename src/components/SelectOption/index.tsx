@@ -3,7 +3,7 @@ import * as C from './styles';
 type Props = {
   title: string;
   description: string;
-  icon: string;
+  icon: any;
   selected: boolean;
   onClick: () => void;
 };
