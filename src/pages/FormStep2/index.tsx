@@ -1,5 +1,7 @@
 import { useNavigate, Link } from 'react-router-dom';
 import { ChangeEvent, useEffect } from 'react';
+import { ReactComponent as PfIcon } from '../../svgs/icon-pf.svg';
+import { ReactComponent as PjIcon } from '../../svgs/icon-pj.svg';
 import * as C from './styles';
 import {
   useForm,
@@ -53,14 +55,18 @@ export const FormStep2 = () => {
         <SelectOption
           title="Sou Pessoa Física (PF)"
           description="Se você for PF escolha essa opção."
-          icon="👤"
+          icon={
+            <PfIcon fill="white" width={35} height={35} />
+          }
           selected={state.personType === 0}
           onClick={() => setPersonType(0)}
         />
         <SelectOption
           title="Sou Pessoa Jurídica (PJ)"
           description="Caso seja PF escolha essa opção."
-          icon="🏢"
+          icon={
+            <PjIcon fill="white" width={30} height={30} />
+          }
           selected={state.personType === 1}
           onClick={() => setPersonType(1)}
         />
