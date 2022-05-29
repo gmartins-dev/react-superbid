@@ -67,7 +67,7 @@ const FormReducer = (state: State, action: Action) => {
     case FormActions.setName:
       return { ...state, name: action.payload };
     case FormActions.setPassword:
-      return { ...state, name: action.payload };
+      return { ...state, password: action.payload };
     case FormActions.setCertificateType:
       return { ...state, certificateType: action.payload };
     case FormActions.setPersonType:

@@ -32,6 +32,9 @@ export const FormStep3 = () => {
       state.password != ''
     ) {
       navigate('/step4');
+      // Aqui sera feito o submit do form
+      // Enviando os dados para o backend em formato JSON:
+      console.log(state);
     } else {
       alert('Preencha todos os dados.');
     }
