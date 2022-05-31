@@ -13,7 +13,7 @@
 
 ## Aplicação React para cadastro de vendedores em um marketplace.
 
-### ❓- O que foi solicitado nesse teste:
+### 📝 O que foi solicitado para ser feito nesse teste:
 
 > A ideia é ver como você estrutura um projeto e como aplica o conceito de
 > **"clean code"** e **separação de responsabilidades.**
