@@ -11,7 +11,7 @@
 
 
 
-## Aplicação React para cadastro de vendedores em um marketplace.
+# Aplicação React para cadastro de vendedores em um marketplace.
 
 ### 📝 O que foi solicitado para ser feito nesse teste técnico/prático:
 
